@@ -72,7 +72,7 @@ python main.py --path ./mi_proyecto --verbose --output json
 
 ## Integración con Agentes de IA (MCP Skill)
 
-SecretScanner incluye un servidor compatible con el **Model Context Protocol (MCP)**, lo que permite que herramientas de Inteligencia Artificial (como Fluxy, Claude Desktop o Cursor) utilicen este analizador de manera nativa como una "Skill".
+SecretScanner incluye un servidor compatible con el **Model Context Protocol (MCP)**, lo que permite que herramientas de Inteligencia Artificial (como Claude Desktop o Cursor) utilicen este analizador de manera nativa como una "Skill".
 
 Para iniciar el servidor MCP, puedes utilizar el comando global que se instala automáticamente con el paquete:
 ```bash
