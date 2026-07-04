@@ -33,7 +33,9 @@ jobs:
 
       # ── 4. Install dependencies ──────────────────────────────────────────
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install -e .
 
       # ── 5. Run tests with coverage ───────────────────────────────────────
       # pytest reads all options from pyproject.toml:
@@ -47,5 +49,5 @@ jobs:
         if: failure() && steps.pytest.conclusion == 'failure'
         run: |
           echo "::error::Coverage below 80% — build failed"
-          echo "Ensure the scanner/ package maintains at least 80% test coverage."
+          echo "Ensure the src/secret_scanner/ package maintains at least 80% test coverage."
           exit 1
