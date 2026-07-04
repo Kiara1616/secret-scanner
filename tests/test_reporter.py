@@ -11,7 +11,7 @@ from pathlib import Path
 
 import pytest
 
-from scanner.reporter import export_json, export_csv
+from secret_scanner.scanner.reporter import export_json, export_csv
 
 
 # ── Fixtures ───────────────────────────────────────────────────────────────

@@ -22,8 +22,8 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
 
 from colorama import Fore, Style, init as colorama_init
 
-from scanner.file_scanner import scan_path
-from scanner.reporter import export_json, export_csv
+from secret_scanner.scanner.file_scanner import scan_path
+from secret_scanner.scanner.reporter import export_json, export_csv
 
 # ── Colour helpers ─────────────────────────────────────────────────────────
 SEVERITY_COLOR = {
