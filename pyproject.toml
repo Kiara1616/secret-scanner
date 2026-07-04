@@ -32,14 +32,14 @@ secret-scanner = "secret_scanner.main:main"
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = [
-    "--cov=src.secret_scanner",
+    "--cov=secret_scanner.scanner",
     "--cov-report=term-missing",
     "--cov-fail-under=80",
     "-v",
 ]
 
 [tool.coverage.run]
-source = ["src/secret_scanner"]
+source = ["src/secret_scanner/scanner"]
 omit = ["tests/*"]
 
 [tool.coverage.report]
