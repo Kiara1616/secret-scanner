@@ -19,6 +19,7 @@ classifiers = [
 ]
 dependencies = [
     "colorama>=0.4.6",
+    "mcp>=1.0.0",
 ]
 
 [project.urls]
@@ -27,6 +28,7 @@ Repository = "https://github.com/Kiara1616/secret-scanner"
 
 [project.scripts]
 secret-scanner = "secret_scanner.main:main"
+secret-scanner-mcp = "secret_scanner.mcp_server:main"
 
 # ── pytest + coverage ──────────────────────────────────────────────────────
 [tool.pytest.ini_options]
