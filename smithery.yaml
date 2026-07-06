@@ -1,0 +1,5 @@
+startCommand:
+  type: stdio
+  config:
+    command: secret-scanner-mcp
+    args: []
