@@ -1,5 +1,7 @@
 startCommand:
   type: stdio
   config:
-    command: secret-scanner-mcp
-    args: []
+    command: python
+    args:
+      - -m
+      - secret_scanner.mcp_server
